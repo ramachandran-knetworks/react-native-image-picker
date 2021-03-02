@@ -346,7 +346,7 @@ public class ImagePickerModule extends ReactContextBaseJavaModule
 
     try
     {
-      currentActivity.startActivityForResult(libraryIntent, requestCode);
+      currentActivity.startActivityForResult(Intent.createChooser(libraryIntent,null), requestCode);
     }
     catch (ActivityNotFoundException e)
     {
